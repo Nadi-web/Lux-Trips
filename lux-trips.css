@@ -26,7 +26,7 @@ a{
 .flex-col_main-block{
     width: 100%;
     height: 999px;
-    background-image: url(./img/main-block-back.png);
+    background-image: url(./img/main-block-back.webp);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -258,6 +258,11 @@ header{
     margin-left: 5%;
 }
 
+.fd img{
+    height: 18px;
+    width: 18px;
+}
+
 .flex-col_top-rated{
     width: 100%;
     background-color: #E2D3CE;
@@ -355,19 +360,19 @@ header{
 }
 
 .slider-item__austria{
-    background-image: url(./img/scroll-winter-park.png);
+    background-image: url(./img/scroll-winter-park.webp);
 }
 
 .slider-item__peru{
-    background-image: url(./img/scroll-machu-picchu.png);
+    background-image: url(./img/scroll-machu-picchu.webp);
 }
 
 .slider-item__croatia{
-    background-image: url(./img/scroll-hvar.png);
+    background-image: url(./img/scroll-hvar.webp);
 }
 
 .slider-item__jordan{
-    background-image: url(./img/scroll-wadi-musa.png);
+    background-image: url(./img/scroll-wadi-musa.webp);
 }
 
 .text-block{
@@ -462,7 +467,7 @@ header{
 
 .background-sea{
     width: 100%;
-    background-image: url(./img/background-sea.png);
+    background-image: url(./img/background-sea.webp);
     background-size: cover ;
 }
 
@@ -500,23 +505,23 @@ header{
 }
 
 .img-card_destinations{
-    background-image: url(./img/card-new-destinatios.png);
+    background-image: url(./img/card-new-destinatios.webp);
 }
 
 .img-card_winter{
-    background-image: url(./img/card-best-winter.png);
+    background-image: url(./img/card-best-winter.webp);
 }
 
 .img-card_health{
-    background-image: url(./img/card-your-health.png);
+    background-image: url(./img/card-your-health.webp);
 }
 
 .img-card_extraordinary{
-    background-image: url(./img/card-extraordinary-places.png);
+    background-image: url(./img/card-extraordinary-places.webp);
 }
 
 .img-card_experiences{
-    background-image: url(./img/card-experiences.png);
+    background-image: url(./img/card-experiences.webp);
 }
 
 .img-card p{
@@ -531,8 +536,8 @@ header{
 }
 
 .crystal-link{
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: 180px;
 }
 
 .crystal{
@@ -641,27 +646,27 @@ header{
 }
 
 .supercars{
-    background-image: url(./img/supercars.png);
+    background-image: url(./img/supercars.webp);
 }
 
 .villas{
-    background-image: url(./img/villas.png);
+    background-image: url(./img/villas.webp);
 }
 
 .private-helicopter{
-    background-image: url(./img/helocopter.png);
+    background-image: url(./img/helocopter.webp);
 }
 
 .hotels{
-    background-image: url(./img/hotels.png);
+    background-image: url(./img/hotels.webp);
 }
 
 .yachts{
-    background-image: url(./img/yachts.png);
+    background-image: url(./img/yachts.webp);
 }
 
 .private-jet{
-    background-image: url(./img/jet.png);
+    background-image: url(./img/jet.webp);
 }
 
 
@@ -675,7 +680,7 @@ header{
 .custom-block{
     width: 100%;
     height: 1930px;
-    background-image: url(./img/section-five-bg.png);
+    background-image: url(./img/section-five-bg.webp);
     background-size: cover;
     justify-content: flex-start;
     padding-top: 80px;
@@ -808,7 +813,7 @@ header{
     width: 77%;
     height: 565px;
     border-radius: 10px;
-    background-image: url(./img/get-in-touch-bg.png);
+    background-image: url(./img/get-in-touch-bg.webp);
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -1040,11 +1045,23 @@ header{
 @media screen and (max-width: 768px){
 
     html{
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    .categories{
-        flex-direction: column !important;
+    .nav-links{
+        font: 400 1.5rem/1.6rem Forum;
+    }
+
+    .font-size-l{
+        font: 400 4.5rem/4.5rem Forum;
+    }
+
+    .decor-text_m{
+        font: 400 2.1rem/1.563rem Forum;
+    }
+
+    .book-tickets .categories{
+        flex-direction: column;
         width: 92%;
     }
 
@@ -1052,8 +1069,16 @@ header{
         width: 85%;
     }
 
+    .flex-row__white-box .button{
+        height: 50%;
+    }
+
     .clouds{
         height: 320px;
+    }
+
+    .customise-trip__footer{
+        width: 70%;
     }
 
     .form, .get-in-touch__header{
@@ -1068,12 +1093,68 @@ header{
         width: 95%;
     }
 
-    .flex-row__white-box .button{
-        height: 50%;
+    .get-in-touch__header{
+        width: 95%;
+        align-items: center;
+    }
+
+    .get-in-touch__header .font-size-l{
+        width: 100%;
+        font: 400 44px/44px Forum;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 576px){
+
+    .flex-row__white-box .button{
+        height: 35%;
+    }
+
+    .decor-text_m {
+        font: 400 1.7rem/1.563rem Forum;
+    }
+
+    .flex-col_top-rated, .luxury-packages, .book-tickets {
+        position: relative;
+        top: -95px;
+        justify-content: flex-start;
+    }
+
+    .flex-row__white-box{
+        height: 200px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: repeat(3, fit-content);
+        grid-template-areas:
+        "dt tt"
+        "wh pp"
+        "fd fd";
+        padding-top: 25px;
+    }
+
+    .dt{
+        grid-area: dt;
+    }
+    .tt{
+        grid-area: tt;
+    }
+    .pp{
+        grid-area: pp;
+    }
+    .wh{
+        grid-area: wh;
+    }
+    .fd{
+        grid-area: fd;
+    }
+
+    .flex-row__white-box .button{
+        width: auto;
+        height: 40px;
+    }
+
     .categories{
         width: 92%;
     }
@@ -1081,8 +1162,6 @@ header{
     .categories .flex-col{
         width: 100%;
     }
-
-
 
     .font-manrope-s{
         font-size: 16px;
@@ -1101,6 +1180,48 @@ header{
         width: 20%;
         background-size: contain;
         font-size: 51px;
+    }
+
+    .custom-block .font-size-l{
+        max-width: 100%;
+    }
+
+    .customise-trip__footer{
+        width: 90%;
+    }
+    
+    .get-in-touch__wrap{
+        background-position: -260px;
+        align-items: center;
+    }
+
+    .get-in-touch__wrap:after {
+        top: 208px;
+        width: 80%;
+        height: 100%;
+        opacity: 1;
+        filter: blur(46px);
+    }
+
+    .form__group{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form{
+        width: 91%;
+    }
+
+    .get-in-touch__header .font-manrope-s{
+        width: 158px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .subscribe{
+        width: 100%;
+        left: 0;
+        margin-top: 34px;
     }
 
 }
@@ -1156,7 +1277,6 @@ header{
         height: 362px;
         top: -7%;
 
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: repeat(4, fit-content);
         grid-template-areas:
@@ -1164,7 +1284,6 @@ header{
         "tt tt tt ."
         "wh wh pp pp"
         "fd fd fd fd";
-        padding-top: 25px;
     }
 
     .dt{
@@ -1203,58 +1322,5 @@ header{
 
     .luxury-packages{
         height: 900px;
-    }
-
-    .custom-block .font-size-l{
-        max-width: 100%;
-    }
-
-    .customise-trip__footer{
-        width: 90%;
-    }
-    
-    .get-in-touch__wrap{
-        background-position: -260px;
-        align-items: center;
-    }
-
-    .get-in-touch__wrap:after {
-        top: 238px;
-        width: 80%;
-        height: 100%;
-        opacity: 1;
-        filter: blur(46px);
-    }
-
-    .get-in-touch__header{
-        width: 100%;
-        align-items: center;
-    }
-
-    .get-in-touch__header .font-size-l{
-        width: 100%;
-        font: 400 44px/44px Forum;
-        text-align: center;
-    }
-
-    .form__group{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .form{
-        width: 91%;
-    }
-
-    .get-in-touch__header .font-manrope-s{
-        width: 158px;
-        text-align: center;
-        line-height: 24px;
-    }
-
-    .subscribe{
-        width: 100%;
-        left: 0;
-        margin-top: 34px;
     }
 }
