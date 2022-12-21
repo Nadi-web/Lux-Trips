@@ -1226,6 +1226,21 @@ header{
 
 }
 
+@media screen and (max-width: 510px){
+    header{
+        width: 85%;
+    }
+
+    .logo-link{
+        width: 76px;
+        margin: auto;
+    }
+
+    header .button{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 376px){
     .flex-row__link-row{
         width: 95% !important;
