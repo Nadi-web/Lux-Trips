@@ -220,7 +220,7 @@ header{
     font: 500 0.8rem/0.8rem Manrope;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
     background-color: #ffffff;
 }
 
@@ -262,6 +262,11 @@ header{
     height: 18px;
     width: 18px;
 }
+
+
+/*-----------------end of the first section-----------------*/
+
+
 
 .flex-col_top-rated{
     width: 100%;
@@ -425,10 +430,11 @@ header{
 .slick{
     width: 100%;
     margin-left: 92px;
-    overflow-x: auto; /* сработало */
+    overflow-x: auto;
 }
 
 
+/*-----------------end of the second top-rated section-----------------*/
 
 
 .wrapper{
@@ -609,7 +615,7 @@ header{
 }
 
 
-
+/*-----------------end of the third section luxary-pacages-----------------*/
 
 
 .book-tickets{
@@ -670,6 +676,7 @@ header{
 }
 
 
+/*-----------------end of the fourth section book tickets-----------------*/
 
 
 .customise-trip{
@@ -788,7 +795,7 @@ header{
 }
 
 
-
+/*-----------------end of the fifth section customise-trip-----------------*/
 
 
 .get-in-touch{
@@ -877,8 +884,7 @@ header{
 }
 
 
-
-
+/*-----------------end of the sixth section get-in-touch-----------------*/
 
 
 .reviews{
@@ -964,7 +970,7 @@ header{
 }
 
 
-
+/*-----------------end of the seventh section reviews-----------------*/
 
 
 .contact{
@@ -1009,6 +1015,8 @@ header{
     margin-top: 20px;
 }
 
+
+/*-----------------end of the eighth section contact-----------------*/
 
 
 footer{
@@ -1214,7 +1222,7 @@ footer{
     }
 
     .clouds{
-        height: 330px;
+        height: 340px;
     }
 
     .customise-trip__footer{
@@ -1476,7 +1484,7 @@ footer{
     }
 
     .clouds{
-        height: 520px;
+        height: 530px;
     }
 
     .flex-row__white-box{
