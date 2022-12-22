@@ -54,6 +54,11 @@ header{
     width: 55.9%;
 }
 
+.logo-link{
+    width: 121px;
+    height: 63px;
+}
+
 .header__menu nav{
     width: 100%;
 }
@@ -220,7 +225,7 @@ header{
     font: 500 0.8rem/0.8rem Manrope;
 }
 
-.dropdown-content p:hover {
+.dropdown-content a:hover {
     background-color: #ffffff;
 }
 
@@ -713,6 +718,7 @@ header{
 
 .font-manrope-s{
     font: 300 18px/32px Manrope;
+    color: #0C0B10;
 }
 
 .step__info .font-manrope-s{
@@ -975,8 +981,7 @@ header{
 
 .contact{
     width: 100%;
-    position: absolute;
-    bottom: -7550px;
+    margin: -570px 0 0 0 ;
 }
 
 .form-block{
@@ -1024,8 +1029,22 @@ footer{
     width: 100%;
     background: url(./img/bg_footer.webp) no-repeat center;
     background-size: cover;
-
 }
+
+.footer__logo img{
+    width: 215px;
+    height: 113px;
+
+    margin: 108px 0 99px 0;
+}
+
+.footer__container a{
+    margin-left: 46px;
+}
+
+
+
+
 
 
 @media screen and (max-width: 1200px){
@@ -1038,6 +1057,10 @@ footer{
         top: -150px;
 
         justify-content: flex-start;
+    }
+
+    .flex-col_top-rated .decor-block{
+        margin-top: 35px;
     }
 
     .luxury-packages{
@@ -1219,10 +1242,11 @@ footer{
 
     .flex-row__white-box .button{
         height: 50%;
+        width: fit-content;
     }
 
     .clouds{
-        height: 340px;
+        height: 337px;
     }
 
     .customise-trip__footer{
@@ -1288,6 +1312,27 @@ footer{
 
     .form-block{
         width: 92%;
+    }
+
+    .footer__container .flex-row{
+        flex-direction: column;
+        row-gap: 38px;
+    }
+
+    .high-row{
+        align-items: flex-end;
+    }
+
+    .low-row{
+        align-items: flex-start;
+    }
+
+    .footer__container a{
+        margin: 0;
+    }
+
+    .footer__container{
+        column-gap: 46px;
     }
 }
 
