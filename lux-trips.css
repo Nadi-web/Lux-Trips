@@ -289,7 +289,8 @@ header{
 
 .decor-block .font-size-l{
     text-align: center;
-    position: absolute;
+    position: relative;
+    top: -160px;
 
     max-width: 344px;
 }
@@ -316,7 +317,6 @@ header{
     margin-right: 18px; 
     min-height: 28px; 
     overflow-x: auto; 
-    overflow-y: visible;
 
     font-size: 25px; 
 }
@@ -768,7 +768,7 @@ header{
     gap: 20px;
 }
 
-.button-request svg, .subscribe svg{
+.button-request svg, .subscribe svg, .recall svg{
     overflow: visible;
 }
 
@@ -881,6 +881,145 @@ header{
 
 
 
+.reviews{
+    width: 100%;
+}
+
+.slick__review{
+    height: 660px;
+    margin: 0;
+}
+
+.rev-wrapper{
+    height: 100%;
+    margin-right: 5%;
+}
+
+.rev-wrapper:first-of-type{
+    margin-left: 5%;
+}
+
+.review{
+    height: 92%;
+    width: 636px;
+    background: rgba(226, 211, 206, 0.2);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-items: flex-start;
+    padding: 61px 66px 77px 89px;
+
+    justify-content: space-between;
+}
+
+.review__photo{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.author-1{
+    background-image: url(./img/author-1.webp);
+}
+
+.author-2{
+    background-image: url(./img/author-2.webp);
+}
+
+.author-3{
+    background-image: url(./img/author-3.webp);
+}
+
+.review__photo::after{
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: 430px;
+    width: 90px;
+    height: 90px;
+    filter: blur(11px);
+    background: inherit;
+    z-index: -1;
+}
+
+.font-manrope-m{
+    font: 300 21px/37px Manrope;
+}
+
+.manrope_bold{
+    font-weight: 500;
+}
+
+.reviews::after{
+    background: url(./img/review-bg.webp) no-repeat center;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 1014px;
+    width: 100%;
+    position: relative;
+    bottom: 470px;
+    z-index: -1;
+}
+
+
+
+
+
+.contact{
+    width: 100%;
+    position: absolute;
+    bottom: -7550px;
+}
+
+.form-block{
+    width: 65%;
+    height: 540px;
+    background: rgba(226, 211, 206, 0.2);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.form-inputs{
+    row-gap: 14px;
+}
+
+.contact__input{
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 95px;
+    width: 312px;
+    height: 55px;
+    text-align: center;
+}
+
+.recall{
+    height: 55px;
+    width: 312px;
+    background-color: #0C0B10;
+    border-radius: 95px;
+    row-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+footer{
+    height: 555px;
+    width: 100%;
+    background: url(./img/bg_footer.webp) no-repeat center;
+    background-size: cover;
+
+}
+
+
 @media screen and (max-width: 1200px){
     html{
         font-size: 13px;
@@ -937,6 +1076,7 @@ header{
     .get-in-touch__header .font-size-l{
         width: 70%;
     }
+
 }
 
 @media screen and (max-width: 992px){
@@ -1074,7 +1214,7 @@ header{
     }
 
     .clouds{
-        height: 320px;
+        height: 330px;
     }
 
     .customise-trip__footer{
@@ -1103,6 +1243,44 @@ header{
         font: 400 44px/44px Forum;
         text-align: center;
     }
+
+    .review{
+        height: 92%;
+        width: 344px;
+        align-items: center;
+        padding: 55px 0;
+    
+        justify-content: space-between;
+    }
+
+    .review__photo::after{
+        top: 70px;
+        right: 100px;
+    }
+
+    .review .font-manrope-m{
+        font: 300 16px/30px Manrope;
+        width: 90%;
+    }
+
+    .review__author .manrope_bold{
+        font-weight: 500;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .review__author .font-manrope-s{
+        font-size: 12px;
+    }
+
+    
+    .reviews::after{
+        bottom: 520px;
+    }
+
+    .form-block{
+        width: 92%;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -1111,8 +1289,17 @@ header{
         height: 35%;
     }
 
+    .info-header{
+        height: 40px;
+        width: 45%;
+    }
+
     .decor-text_m {
-        font: 400 1.7rem/1.563rem Forum;
+        font: 400 1.5rem/1.5rem Forum;
+    }
+
+    .text-extra-large{
+        font: 400 100px/80px Forum;
     }
 
     .flex-col_top-rated, .luxury-packages, .book-tickets {
@@ -1123,6 +1310,7 @@ header{
 
     .flex-row__white-box{
         height: 200px;
+        top: -25px;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1239,6 +1427,10 @@ header{
     header .button{
         display: none;
     }
+
+    .decor-text_m {
+        font: 400 1.563rem/1.563rem Forum;
+    }
 }
 
 @media screen and (max-width: 376px){
@@ -1290,7 +1482,7 @@ header{
     .flex-row__white-box{
         width: 344px;
         height: 362px;
-        top: -7%;
+        top: -5%;
 
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: repeat(4, fit-content);
